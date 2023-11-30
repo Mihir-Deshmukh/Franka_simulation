@@ -19,7 +19,7 @@ To get started with Franka_simulation:
    ```
 3. Build your ros workspace.
 
-## How to use
+## Usage
 - Run the following launch file to run the simulation.
   ```
   roslaunch panda_moveit_config demo_gazebo.launch
@@ -28,7 +28,17 @@ To get started with Franka_simulation:
   ```
   rosrun panda_sim spawn_model.py
   ```
-- Any changes you need to do for different set of objects can be done in ```spawn_model.py``` file
+- Any changes you need to do for different set of objects can be done in ```spawn_model.py``` file.
+
+## Original Package Attribution
+The frank_ros of this project is based on the following package from the [franka_ros](https://github.com/tahsinkose/franka_ros) respository.
+
+## Modifications
+
+The following modifications have been made to the original package to adapt it to the needs of this project:
+
+- Added the Kinect sensor to the URDF for the depth image capture.
+- Configured the ```panda.launch``` file for this specific use case.
   
 ## Compatibility
 
@@ -38,6 +48,6 @@ This project is compatible with the following environment:
 - ROS Distribution: Noetic
 
 ## References
-- https://github.com/tahsinkose/franka_ros
+- 
 
 
