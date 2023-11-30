@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<!-- BOTTOM FIXED LINK 
+This link is the base of the arm in which arm is placed 
+-->
+<robot name="depthcamera" xmlns:xacro="http://ros.org/wiki/xacro">
+  <gazebo reference="camera_link">
+    <sensor name="depth_camera" type="depth">
+      <update_rate>20</update_rate>
+      <camera>
+        <horizontal_fov>1.47198</horizontal_fov>
+        <image>
+          <width>1920</width>
+          <height>1080</height>
+          <format>R8G8B8</format>
+        </image>
+        <clip>
+          <near>0.2</near>
+          <far>10</far>
+        </clip>
+      </camera>
+      <plugin name="depth_controller" filename="libgazebo_ros_openni_kinect.so">
+        <!-- Update the baseline from the documentation -->
+        <baseline>0.12</baseline>
+        <alwaysOn>true</alwaysOn>
+        <updateRate>1.0</updateRate>
+        <cameraName>depth_camera_ir</cameraName>
+        <imageTopicName>/depth_camera/color/image_raw</imageTopicName>
+        <cameraInfoTopicName>/depth_camera/color/camera_info</cameraInfoTopicName>
+        <depthImageTopicName>/depth_camera/depth/image_raw</depthImageTopicName>
+        <depthImageInfoTopicName>/depth_camera/depth/camera_info</depthImageInfoTopicName>
+        <pointCloudTopicName>/depth_camera/depth/points</pointCloudTopicName>
+        <frameName>camera_frame</frameName>
+        <pointCloudCutoff>0.2</pointCloudCutoff>
+        <pointCloudCutoffMax>10.0</pointCloudCutoffMax>
+        <!-- Update the camera parameters -->
+        <distortionK1>0.0</distortionK1>
+        <distortionK2>0.0</distortionK2>
+        <distortionK3>0.0</distortionK3>
+        <distortionT1>0.0</distortionT1>
+        <distortionT2>0.0</distortionT2>
+        <CxPrime>0.0</CxPrime>
+        <Cx>946.2454833984375</Cx> <!-- Update with the provided value -->
+        <Cy>534.5155029296875</Cy> <!-- Update with the provided value -->
+        <focalLength>1063.443359375</focalLength> <!-- Update with the provided value -->
+        <hackBaseline></hackBaseline>
+      </plugin>
+    </sensor>
+  </gazebo>
+</robot>
