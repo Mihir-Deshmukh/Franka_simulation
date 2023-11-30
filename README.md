@@ -31,7 +31,7 @@ To get started with Franka_simulation:
 - Any changes you need to do for different set of objects can be done in ```spawn_model.py``` file.
 
 ## Original Package Attribution
-The frank_ros of this project is based on the following package from the [franka_ros](https://github.com/tahsinkose/franka_ros) respository.
+The ```frank_ros``` package of this project is based on the following repository [franka_ros](https://github.com/tahsinkose/franka_ros).
 
 ## Modifications
 
@@ -46,8 +46,5 @@ This project is compatible with the following environment:
 
 - Operating System: Ubuntu 20.04
 - ROS Distribution: Noetic
-
-## References
-- 
 
 
