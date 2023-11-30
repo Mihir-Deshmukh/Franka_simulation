@@ -8,7 +8,7 @@ Here only four of them are used:
 
 Be sure to add these object models or any other models you want to use in your .gazebo/models folder beforehand.
 
-![Object scene geenration](relative_path_to_gif.gif)
+![Object scene geenration](data_gen.gif)
 
 ## Installation
 
