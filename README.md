@@ -36,7 +36,7 @@ This project is compatible with the following environment:
 - Operating System: Ubuntu 20.04
 - ROS Distribution: Noetic
 
-##References
+## References
 - https://github.com/tahsinkose/franka_ros
 
 
