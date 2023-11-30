@@ -4,7 +4,7 @@ Here only four of them are used:
 1. Cricket_ball
 2. chips_can
 3. 025_mug_textured
-4. 029_plate_textured
+4. 029_plate_textured  
 Be sure to add these object models or any other models you want to use in your .gazebo/models folder beforehand.
 
 ## Installation
